@@ -1,0 +1,46 @@
+@import "color_palette";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//nav styles in navbar.scss
+nav {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 45vh;
+    background-image: url("/assets/hero.png");
+    background-size: cover;
+}
+
+section {
+    border: 1px solid black;
+}
+
+.whats-new {
+    padding: 2em;
+}
+
+.about {
+    padding: 2em;
+}
+
+.latest {
+    background: $latest-post-background;
+    display: flex;
+    padding-top: 2em;
+    article {
+        flex-direction: column;
+        border: 1px solid blue;
+        padding: 1em;
+        margin: 2em;
+        background: $post-preview-card-background
+    }
+}
