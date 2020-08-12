@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Home
+announcements: Hello, welcome to the page.
 ---
 
 <section class="hero">
     <!-- <img src="assets/hero.png" alt="Hero image">  https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images after css is written-->
 </section>
 
-<section class="whats-new" markdown="1">
+<section class="whats-new">
     <h2>Whats new:</h2>
-    <p>{% include new_stuff.md %}</p>
+    <p>{{ page.announcements }}</p> <!-- make this an if loop so there can be a list if more than one item -->
 </section>
 
 
@@ -20,4 +21,5 @@ title: Home
 
 <section class="about">
     <h2>About Me</h2>
+    <p></p>
 </section>
